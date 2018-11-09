@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use diagnostics;
-use Data::Dump::Streamer;
+#use Data::Dump::Streamer;
 use Getopt::Long;
 use Text::Iconv;
 use Spreadsheet::XLSX;
@@ -92,7 +92,7 @@ sub createtable {
         $inputheaderTable{'col_' . $i}      = $headername[1];
         $i++;
         push @headervalues, ("$headername[1] VARCHAR(255)", "$sep");
-        Dump(\@headervalues)->Names('HeaderValues')->Indent(2)->Out();
+        #Dump(\@headervalues)->Names('HeaderValues')->Indent(2)->Out();
     }
     pop @headervalues;
 
