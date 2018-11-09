@@ -1,6 +1,7 @@
 # sample-code
 just sample perl code that parses xlxs files and loads to mysql/mariadb. <br>
-Initial commit written in just a couple hours but will be adding to it. 
+Initial commit written in just a couple hours but will be adding to it.<br>
+If you are using a csv file, just open it in Excel and export as xlsx.<br>
 
 <strong>Dependancies:</strong><br>
  DBI - perl db interface<br>
