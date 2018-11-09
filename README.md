@@ -21,3 +21,4 @@ Add support/drivers for Postgres, SQLite, and newer MariaDB driver.<br>
 Add usage output.<br>
 Add sanitization test package.<br>
 Add newline sanitization back in.<br>
+Make use of already existing data type detection from xsxl to better tailor sql column data types.
