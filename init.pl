@@ -137,14 +137,13 @@ sub insertdata {
         my %finalinput;
         @finalinput{ @headername } = @dataname;
         my ($stmt, @bind) = SQL::Abstract->new->insert($table, \%finalinput);
-        print $stmt, "\n";
-        print join ', ', @bind, "\n";
-
+        
         if ($host eq 'localhost') {
             $dsn = "DBI:mysql:database=$database;host=$host";
         } else {
             $dsn = "DBI:mysql:database=$database;host=$host;port=$port";
         }
+        
         $dbh = DBI->connect($dsn, $user, $pass, { RaiseError => 1, AutoCommit => 1 });
 
         my $sth = $dbh->prepare($stmt);
