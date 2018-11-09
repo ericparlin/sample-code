@@ -14,7 +14,7 @@ Initial commit written in just a couple hours but will be adding to it.
 
 <strong>Usage example:</strong>
 init.pl --file F:\data_load.xlsx --database testdb --table testtable --user eparlin --pw pass --host 192.168.201.132 --port 3306<br><br>
-
+<strong>The host and port args are optional. If you are on localhost you can omit them</strong><br><br>
 <strong>TODO:</strong>
 Add support/drivers for Postgres, SQLite, and newer MariaDB driver.<br>
 Add usage output.<br>
