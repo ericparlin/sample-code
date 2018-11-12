@@ -125,7 +125,7 @@ sub insertdata {
     #Dump(scalar @inputdataList)->Names('inputdataList')->Indent(2)->Out();
     my @headername;
     my @dataname;
-    foreach (0..$#inputdataList/32) {
+    foreach (0..$#inputdataList/4/(@inputdataHeaders/2)) {
         my $chnk = List::MoreUtils::natatime 4, @inputdataList;
         while (my @input = $chnk->()) {
             push @dataname, $input[3];
